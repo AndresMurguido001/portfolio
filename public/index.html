@@ -1,18 +1,19 @@
-<html>
+
+  <html>
   <head>
     <meta charset="utf-8">
     <title>Andres Murguido Dev Profile</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link rel="stylesheet" href="new_port.css">
+    <link rel="stylesheet" href="./css/new_port.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script type="text/javascript" src= "https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
-  <script type="text/javascript" src= "new_port.js"></script>
+  <script type="text/javascript" src= "../js/new_port.js?t=1521396728832"></script>
 
 
   </head>
@@ -24,11 +25,20 @@
       <div class="header">
     <nav>
       <ul>
-        <li>Projects</li>
-        <li>Contact Me</li>
+        <div class="drop-container">
+        <li id="projects">Projects</li>
+        <div id="dropdown-content">
+          <a href="https://drivewazeapp.herokuapp.com" target="_blank">DriveWaze</a>
+        </div>
+          </div>
+        <li><a href="#content">Contact Me</a></li>
       </ul>
     </nav>
     </div>
+
+
+
+
 
 
 
@@ -48,7 +58,7 @@
         <div class="inner">
           <div class="back">
             </div>
-          <img src="MurguidoAndres.jpg" alt="My Picture">
+          <img src="./images/MurguidoAndres.jpg" alt="My Picture">
         </div>
         <div class="name">
           <h3>Andres Murguido</h3>
@@ -64,7 +74,7 @@
           <div class="form-back">
             <h5>Contact:</h5>
           </div>
-          <form class="contactMe" action="https://formspree.io/dre.murguido@gmail.com" method="post">
+          <form class="contactMe" action="https://formspree.io/dre.murguido@gmail.com" method="post" id="content">
             <label class="form-label" for="name">Your Name</label>
             <input class="form-control" type="text" name="fullname"><br>
             <label class="form-label" for="email">Email</label>
